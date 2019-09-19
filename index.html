@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jQuery</title>
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <main>
+        <header>
+            <h1>Build a pizza</h1>
+            <p>Create your pizza for your order</p>
+        </header>
+
+        <div class="pizza-box">
+            <div class="crust"></div>
+            <div class="pizza"></div>
+            <div class="mushrooms"></div>
+            <div class="pepperonis"></div>
+            <div class="pineapples"></div>
+        </div>
+
+        <div class="order-controls">
+            <h4>Add toppings</h4>
+            <div class="buttons">
+                <button class="btn-topping" id="cheese">Cheese</button>
+                <button class="btn-topping" id="pepperoni">Pepperoni</button>
+                <button class="btn-topping" id="mushroom">Mushrooms</button>
+                <button class="btn-topping" id="pineapple">Pineapple</button>
+            </div>
+        </div>
+
+        <div class="order-info">
+            <h4>Total</h4>
+            <span id="total">80.00</span> NOK
+        </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <!-- Other scripts that use jQuery -->
+
+</body>
+
+</html>

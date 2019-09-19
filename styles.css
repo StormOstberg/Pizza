@@ -1,0 +1,364 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #333;
+  color: #ffffff;
+  font-family: "Anton", sans-serif;
+  
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+p {
+  font-family: 'Mansalva', cursive;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 0;
+}
+
+main {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.pizza-box {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  padding: 25px;
+  margin: 0 auto;
+}
+
+.pizza {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  /* background: #f2d383; */
+  background: linear-gradient(45deg, transparent, transparent 49%, #f8c900 49%, #f8c900 51%, transparent 51%), linear-gradient(-45deg, transparent, transparent 49%, #f8c900 49%, #f8c900 51%, transparent 51%), linear-gradient(90deg, transparent, transparent 49%, #f8c900 49%, #f8c900 51%, transparent 51%), linear-gradient(180deg, transparent, transparent 49%, #f8c900 49%, #f8c900 51%, transparent 51%), #FFD72C;
+  margin: 0 auto;
+  left: 50px;
+  top: 50px;
+  z-index: 2;
+  -moz-box-shadow:    inset 0 0 2px #00000088;
+   -webkit-box-shadow: inset 0 0 2px #00000088;
+   box-shadow:         inset 0 0 2px #00000088;
+  /* border: 25px solid #d9a460; */
+}
+
+.cheese{
+  background: #f7f70e;
+  border-radius: 100% 225% 20% 50%;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  margin: 0 auto;
+  left: 50px;
+  top: 50px;
+  z-index: 4;
+}
+
+.pizza.no-cheese {
+  background: #f2d383;
+}
+
+.crust {
+  position: absolute;
+  z-index: 1;
+  left: auto;
+  right: auto;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: #b6642d;
+  -webkit-box-shadow: inset 0 0 2px #e5a53b;
+  border: 1px solid #bb672f;
+}
+
+.order-controls {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order-controls .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-controls .buttons > button {
+  border: 3px solid #f2d383;
+  background: #e5a53b;
+  color: #333;
+  font-size: 1.25em;
+  padding: 5px 15px;
+  border-radius: 10px;
+  min-width: 100px;
+  font-family: 'Mansalva', cursive;
+  font-weight: 500;
+  transition: scale ease-out 200ms;
+}
+
+.order-controls .buttons > button:hover {
+  background: #fcb441;
+  box-shadow: 0 0 10px #00000090;
+  transform: scale(1.05);
+  transition: scale ease-in 200ms;
+}
+
+.order-controls .buttons > button:active {
+  outline: none;
+  box-shadow: none;
+  background: #d39736;
+  transform: scale(0.96);
+}
+
+.order-controls .buttons > button:focus {
+  outline: none;
+}
+
+.order-info {
+  padding: 15px;
+  background: #fff;
+  color: #333;
+  font-size: 1.2em;
+  border-radius: 15px;
+  border: solid #b6642d 5px;
+}
+
+.order-info h4 {
+  margin: 0;
+}
+
+.pepperoni {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: #b22222;
+  border-radius: 50%;
+  border: 3px solid #ce2626;
+  z-index: 20;
+}
+
+.pineapple {
+  position: absolute;
+  border-bottom: 25px solid #f7f70e;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  height: 0;
+  width: 10px;
+  z-index: 20;
+}
+
+.mushroom {
+  text-align: center;
+  width: 35px;
+  height: 40px;
+  z-index: 5;
+  position: absolute;
+  display: block;
+
+}
+
+.mushroom:before {
+  display: block;
+  width: 35px;
+  height: 20px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background: #f1f1f1;
+  content: " ";
+  box-shadow: 0 0 1px #00000040;
+}
+
+.mushroom:after {
+  background: #e2e2e2;
+  height: 12px;
+  width: 15px;
+  margin: 0 auto 0 auto;
+  content: " ";
+  display: block;
+}
+
+.mushroom:nth-child(1) {
+  transform: rotate(123deg);
+  left: 123px;
+  top: 200px;
+}
+
+.mushroom:nth-child(2) {
+  transform: rotate(117deg);
+  left: 202px;
+  top: 200px;
+}
+
+.mushroom:nth-child(3) {
+  transform: rotate(222deg);
+  left: 121px;
+  top: 330px;
+}
+
+.mushroom:nth-child(4) {
+  transform: rotate(320deg);
+  left: 230px;
+  top: 106px;
+}
+
+.mushroom:nth-child(5) {
+  transform: rotate(120deg);
+  left: 197px;
+  top: 302px;
+}
+
+.mushroom:nth-child(6) {
+  transform: rotate(117deg);
+  left: 285px;
+  top: 105px;
+}
+
+.mushroom:nth-child(7) {
+  transform: rotate(57deg);
+  left: 162px;
+  top: 119px;
+}
+
+.mushroom:nth-child(8) {
+  transform: rotate(302deg);
+  left: 257px;
+  top: 269px;
+}
+
+.mushroom:nth-child(9) {
+  transform: rotate(28deg);
+  left: 284px;
+  top: 201px;
+}
+
+.mushroom:nth-child(10) {
+  transform: rotate(237deg);
+  left: 102px;
+  top: 275px;
+}
+
+.pepperoni:nth-child(1) {
+  left: 200px;
+  top: 315px;
+}
+
+.pepperoni:nth-child(2) {
+  left: 126px;
+  top: 140px;
+}
+
+.pepperoni:nth-child(3) {
+  left: 226px;
+  top: 200px;
+}
+
+.pepperoni:nth-child(4) {
+  left: 306px;
+  top: 149px;
+}
+
+.pepperoni:nth-child(5) {
+  left: 237px;
+  top: 88px;
+}
+
+.pepperoni:nth-child(6) {
+  left: 159px;
+  top: 71px;
+}
+
+.pepperoni:nth-child(7) {
+  left: 172px;
+  top: 232px;
+}
+
+.pepperoni:nth-child(8) {
+  left: 297px;
+  top: 252px;
+}
+
+.pepperoni:nth-child(9) {
+  left: 60px;
+  top: 200px;
+}
+
+.pepperoni:nth-child(10) {
+  left: 104px;
+  top: 300px;
+}
+
+.pineapple:nth-child(1) {
+  transform: rotate(157deg);
+  left: 134px;
+  top: 85px;
+}
+
+.pineapple:nth-child(2) {
+  transform: rotate(134deg);
+  left: 70px;
+  top: 267px;
+}
+
+.pineapple:nth-child(3) {
+  transform: rotate(198deg);
+  left: 218px;
+  top: 313px;
+}
+
+.pineapple:nth-child(4) {
+  transform: rotate(107deg);
+  left: 104px;
+  top: 124px;
+}
+
+.pineapple:nth-child(5) {
+  transform: rotate(96deg);
+  left: 201px;
+  top: 261px;
+}
+
+.pineapple:nth-child(6) {
+  transform: rotate(302deg);
+  left: 189px;
+  top: 161px;
+}
+
+.pineapple:nth-child(7) {
+  transform: rotate(318deg);
+  left: 173px;
+  top: 275px;
+}
+
+.pineapple:nth-child(8) {
+  transform: rotate(183deg);
+  left: 243px;
+  top: 185px;
+}
+
+.pineapple:nth-child(9) {
+  transform: rotate(125deg);
+  left: 286px;
+  top: 304px;
+}
+
+.pineapple:nth-child(10) {
+  transform: rotate(265deg);
+  left: 247px;
+  top: 78px;
+}
